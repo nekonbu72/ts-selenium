@@ -1,0 +1,29 @@
+{
+  "name": "typescript-node-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "parcel watch src/app.ts --target node --bundle-node-modules --no-hmr",
+    "parcel": "parcel build src/app.ts --target node --bundle-node-modules",
+    "nexe": "nexe dist/app.js -o bin/app.exe",
+    "build": "npm run parcel && npm run nexe",
+    "exe": "bin\\app",
+    "deploy": "npm run build && npm run exe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/selenium-webdriver": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "nexe": "^3.3.0",
+    "parcel": "^1.12.3",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.3"
+  }
+}
