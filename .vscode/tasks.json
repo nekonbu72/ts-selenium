@@ -15,6 +15,33 @@
     {
       "type": "npm",
       "script": "start",
+      "presentation": {
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "presentation": {
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "exe",
+      "presentation": {
+        "focus": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "npm",
+      "script": "nexe",
+      "presentation": {
+        "focus": true
+      },
       "problemMatcher": []
     }
   ]
