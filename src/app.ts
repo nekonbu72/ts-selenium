@@ -1,8 +1,16 @@
-import { Builder, By, Key } from "selenium-webdriver"; // 3.6.0
+import { Builder, By, Key, Capabilities } from "selenium-webdriver"; // 4.0.0-alpha.1
 import { Config } from "./config";
+
+// const option = Capabilities.firefox()
+//     .set("browser.download.folderList", 2)
+//     .set("browser.download.manager.showWhenStarting", false)
+//     .set("browser.download.dir", Config.DOWNLOAD_DIR)
+//     .set("browser.helperApps.neverAsk.saveToDisk", Config.MIMETYPE);
 
 // geckodriver v0.18.0
 const driver = new Builder().forBrowser("firefox").build();
+
+// .withCapabilities(option)
 
 const exe = async (): Promise<void> => {
     await driver.get(Config.URL);
