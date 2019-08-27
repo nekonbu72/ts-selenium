@@ -3,26 +3,19 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "start": "parcel watch src/app.ts --target node --bundle-node-modules --no-hmr",
-    "parcel": "parcel build src/app.ts --target node --bundle-node-modules",
-    "nexe": "nexe dist/app.js --output bin/app.exe",
-    "build": "npm run parcel && npm run nexe",
-    "exe": "bin\\app",
-    "deploy": "npm run build && npm run exe"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/selenium-webdriver": "^4.0.2",
-    "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
-    "eslint": "^5.16.0",
-    "nexe": "^3.3.1",
-    "parcel": "^1.12.3",
-    "typescript": "^3.5.2"
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "nexe": "^3.3.2",
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "selenium-webdriver": "^4.0.0-alpha.1"
+    "selenium-webdriver": "^4.0.0-alpha.4"
   }
 }
